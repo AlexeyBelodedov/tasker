@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="static/script.js" type="text/javascript"></script>
+    <title>Заметки</title>
+</head>
+
+<body>
+    <div id="sidedrawer" class="mui--no-user-select">
+        <div id="sidedrawer-brand" class="mui--appbar-line-height">
+            <span class="mui--text-title">Tasker</span>
+        </div>
+        <div class="mui-divider"></div>
+        <ul>
+            <li>
+                <strong>Category 1</strong>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Category 2</strong>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Category 3</strong>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <header id="header">
+        <div class="mui-appbar mui--appbar-line-height">
+            <div class="mui-container-fluid">
+                <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+                <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+                <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Tasker
+            </span>
+            </div>
+        </div>
+    </header>
+    <div id="content-wrapper">
+        <div class="mui--appbar-height"></div>
+        <div class="mui-container-fluid">
+            <div class="project-add-box">
+                <form class="mui-form" id="add-task-form">
+                    <legend>Добавить задачу</legend>
+                    <div class="mui-textfield">
+                        <input type="text" class="project-title-input" id="project-name" required placeholder="Название проекта">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="text" class="project-task-input" id="project-task" placeholder="Задача">
+                    </div>
+                    <button type="submit" id="add-task-submit" class="mui-btn mui-btn--raised">Создать
+                    задачу</button>
+                </form>
+            </div>
+            <div class="mui-row" id="tasks-list">
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+
+    </footer>
+</body>
+
+</html>
